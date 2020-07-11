@@ -1,0 +1,67 @@
+body .modal {
+  position: fixed;
+  top: 50px;
+  left: 100px;
+  right: 100px;
+  bottom: 50px;
+  border: 1px solid white;
+  background: white;
+  overflow: auto;
+  border-radius: 4px;
+  outline: none;
+  padding: 20px;
+  display: block;
+  z-index: 1;
+}
+
+.closeButton {
+  right: 100px;
+  position: fixed;
+  background-color:red;
+  border: none;
+  color:red;
+  float: right;
+  margin-top: -15px;
+}
+
+.job-title-skills {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: larger;
+  color:red;
+}
+
+.table-contents {
+  text-transform: capitalize;
+  font-size: smaller;
+  display: inline-block;
+  padding: 5px;
+  margin: 5px;
+}
+
+#importance {
+  font-color: black;
+  font-size: larger;
+  margin-right: 5px;
+}
+
+#skillname {
+  text-transform: uppercase;
+  color: black;
+  margin-right: 5px;
+}
+
+@media screen and (max-width: 1028px) {
+    body .modal {
+      top: inherit;
+      left: inherit;
+      right: inherit;
+      bottom: inherit;
+    }
+    .closeButton {
+      right: 0px;
+      position: relative;
+      margin-top: 0;
+    }
+
+}
